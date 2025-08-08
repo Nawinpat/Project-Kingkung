@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Team Randomizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-basketball-ball"></i>
+                <h1 id="app-title">Basketball Team Randomizer</h1>
+            </div>
+            <div class="language-toggle">
+                <button id="lang-toggle" class="lang-btn">
+                    <i class="fas fa-globe lang-icon"></i>
+                    <span class="lang-text" id="lang-text">EN</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Predefined Players Section -->
+            <section class="predefined-players-section">
+                <h2 id="predefined-players-title">Select Players</h2>
+                <div class="predefined-players-grid">
+                    <div class="player-card" data-player="จิ้น">
+                        <div class="player-avatar" style="background-image: url('pic/จิ้น.jpg')">
+                            <div class="player-avatar-fallback">จิ้น</div>
+                        </div>
+                        <div class="player-info">
+                            <span class="player-name">จิ้น</span>
+                            <button class="select-player-btn" data-player="จิ้น">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="player-card" data-player="เอ็ก">
+                        <div class="player-avatar" style="background-image: url('pic/280670_0.jpg')">
+                            <div class="player-avatar-fallback">เอ็ก</div>
+                        </div>
+                        <div class="player-info">
+                            <span class="player-name">เอ็ก</span>
+                            <button class="select-player-btn" data-player="เอ็ก">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="player-card" data-player="โอ๊ค">
+                        <div class="player-avatar" style="background-image: url('pic/527971596_754698313821231_4121333588667912017_n.jpg')">
+                            <div class="player-avatar-fallback">โอ๊ค</div>
+                        </div>
+                        <div class="player-info">
+                            <span class="player-name">โอ๊ค</span>
+                            <button class="select-player-btn" data-player="โอ๊ค">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="player-card" data-player="แท๊ค">
+                        <div class="player-avatar" style="background-image: url('pic/แท๊ค.jpg')">
+                            <div class="player-avatar-fallback">แท๊ค</div>
+                        </div>
+                        <div class="player-info">
+                            <span class="player-name">แท๊ค</span>
+                            <button class="select-player-btn" data-player="แท๊ค">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="player-card" data-player="นิค">
+                        <div class="player-avatar" style="background-image: url('pic/นิค.jpg')">
+                            <div class="player-avatar-fallback">นิค</div>
+                        </div>
+                        <div class="player-info">
+                            <span class="player-name">นิค</span>
+                            <button class="select-player-btn" data-player="นิค">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="player-card" data-player="เดียร์">
+                        <div class="player-avatar" style="background-image: url('pic/เดียร์.jpg')">
+                            <div class="player-avatar-fallback">เดียร์</div>
+                        </div>
+                        <div class="player-info">
+                            <span class="player-name">เดียร์</span>
+                            <button class="select-player-btn" data-player="เดียร์">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="player-card" data-player="ทัช">
+                        <div class="player-avatar" style="background-image: url('pic/ทัช.jpg')">
+                            <div class="player-avatar-fallback">ทัช</div>
+                        </div>
+                        <div class="player-info">
+                            <span class="player-name">ทัช</span>
+                            <button class="select-player-btn" data-player="ทัช">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="player-card" data-player="ปัน">
+                        <div class="player-avatar" style="background-image: url('pic/ปัน.jpg')">
+                            <div class="player-avatar-fallback">ปัน</div>
+                        </div>
+                        <div class="player-info">
+                            <span class="player-name">ปัน</span>
+                            <button class="select-player-btn" data-player="ปัน">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="player-card" data-player="โชกุน">
+                        <div class="player-avatar">
+                            <div class="player-avatar-fallback">โชกุน</div>
+                        </div>
+                        <div class="player-info">
+                            <span class="player-name">โชกุน</span>
+                            <button class="select-player-btn" data-player="โชกุน">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="player-card" data-player="กล้วย">
+                        <div class="player-avatar">
+                            <div class="player-avatar-fallback">กล้วย</div>
+                        </div>
+                        <div class="player-info">
+                            <span class="player-name">กล้วย</span>
+                            <button class="select-player-btn" data-player="กล้วย">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Player Input Section -->
+            <section class="player-input-section">
+                <h2 id="player-input-title">Manual Player Input</h2>
+                
+                <div class="input-methods">
+                    <div class="manual-input">
+                        <div class="input-group">
+                            <input type="text" id="player-name-input" placeholder="Enter player name" maxlength="50">
+                            <button id="add-player-btn" class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                                <span id="add-btn-text">Add</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-count">
+                    <span id="player-count-text">Players: </span>
+                    <span id="player-count">0</span>
+                    <span id="player-limit">/ 12</span>
+                </div>
+
+                <div class="player-list-container">
+                    <h3 id="player-list-title">Current Players</h3>
+                    <div id="player-list" class="player-list">
+                        <p id="no-players-text" class="no-players">No players added yet</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Size Selection Section -->
+            <section class="team-size-section">
+                <h2 id="team-size-title">Team Size Selection</h2>
+                
+                <div class="team-size-options">
+                    <button class="team-size-btn" data-size="2">2</button>
+                    <button class="team-size-btn" data-size="3">3</button>
+                    <button class="team-size-btn" data-size="4">4</button>
+                    <button class="team-size-btn" data-size="5">5</button>
+                    <button class="team-size-btn" data-size="6">6</button>
+                </div>
+
+                <div class="team-info">
+                    <div class="info-item">
+                        <span id="selected-size-text">Selected Team Size: </span>
+                        <span id="selected-size">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span id="team-count-text">Number of Teams: </span>
+                        <span id="team-count">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span id="extra-players-text">Extra Players: </span>
+                        <span id="extra-players">-</span>
+                    </div>
+                </div>
+
+                <div id="warning-message" class="warning hidden"></div>
+            </section>
+
+            <!-- Action Buttons Section -->
+            <section class="action-section">
+                <div class="action-buttons">
+                    <button id="randomize-btn" class="btn btn-success" disabled>
+                        <i class="fas fa-random"></i>
+                        <span id="randomize-text">Randomize Teams</span>
+                    </button>
+                    <button id="reset-btn" class="btn btn-danger">
+                        <i class="fas fa-redo"></i>
+                        <span id="reset-text">Reset</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results-section" class="results-section hidden">
+                <h2 id="results-title">Team Results</h2>
+                
+                <div class="results-actions">
+                    <button id="save-btn" class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        <span id="save-text">Save Results</span>
+                    </button>
+                    <button id="copy-btn" class="btn btn-secondary">
+                        <i class="fas fa-copy"></i>
+                        <span id="copy-text">Copy to Clipboard</span>
+                    </button>
+                </div>
+
+                <div id="teams-container" class="teams-container">
+                    <!-- Teams will be generated here -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Notification Container -->
+        <div id="notification-container" class="notification-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
