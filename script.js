@@ -8,8 +8,8 @@ class BasketballTeamRandomizer {
         this.currentLanguage = 'en';
         this.languages = {
             en: {
-                appTitle: 'Basketball Team Randomizer',
-                predefinedPlayersTitle: 'Select Players',
+                appTitle: 'KingKung Team Randomizer',
+                predefinedPlayersTitle: 'Select KingKung',
                 playerInputTitle: 'Manual Player Input',
                 addBtnText: 'Add',
                 playerCountText: 'Players: ',
